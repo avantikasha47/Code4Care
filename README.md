@@ -40,7 +40,7 @@ Navigate to the homepage.
 Sign up or log in to your account.
 Access payment features securely via Square Up.
 Video Presentation
-For a comprehensive overview of the app, watch our video presentation .
+For a comprehensive overview of the app, watch our video presentation .https://github.com/avantikasha47/telehealth-app.git
 
 Contributing
 We welcome contributions to improve the Telehealth App. Please fork the repository and submit pull requests.
