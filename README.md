@@ -26,23 +26,19 @@ React
 Installation
 
 Clone the repository:
-bash
-Copy code
 git clone https://github.com/avantikasha47/telehealth-app.git
 
-Install dependencies:
-bash
-Copy code
-cd telehealth-app
+Install dependencies
+
+Run cd telehealth-app then cd telehealth-fronend
 
 npm install
 
-Running the App
+Running the React App with npm start
 
-Start the development server:
-bash
-Copy code
-npm start
+Start the development server:enter first in cd telehealth-backend
+
+Run node server.js
 
 Configuration
 Square Up Payment Gateway: Ensure you have your Square developer credentials set up in your environment variables.
