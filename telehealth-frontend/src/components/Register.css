@@ -1,0 +1,62 @@
+/* Overall container for the registration form */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures form fills viewport height */
+    background-color: #f0f0f0; /* Light background color */
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* White background for form */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Form heading */
+  form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  /* Input fields */
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    outline: none; /* Remove default outline */
+    transition: border 0.2s ease-in-out; /* Smooth border transition */
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border: 1px solid #888; /* Highlight focused input */
+  }
+  
+  /* Submit button */
+  button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #4CAF50; /* Green button color */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out; /* Smooth button color transition */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
+  

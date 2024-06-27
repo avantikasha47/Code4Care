@@ -1,0 +1,20 @@
+[
+    {
+        "_id": "1",
+        "name": "Dr. John Doe",
+        "specialty": "Cardiology",
+        "description": "Experienced cardiologist with a focus on preventive care.",
+        "location": "New York",
+        "chat": true, 
+        "video":true
+    },
+    {
+        "_id": "2",
+        "name": "Dr. Jane Smith",
+        "specialty": "Dermatology",
+        "description": "Specializes in skin care and dermatological treatments.",
+        "location": "Los Angeles",
+        "chat": false, 
+        "video": true  
+    }
+]
