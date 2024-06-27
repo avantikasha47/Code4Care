@@ -4,6 +4,8 @@ Welcome to the Telehealth App! This application is designed to provide instant a
 Current Features
 User Authentication: Secure login and signup functionality.
 Payment Processing: Seamless payment integration using Square Up payment gateway.
+
+
 Future Features
 Video/Audio Calls: Real-time video and audio consultations powered by Daily Web RTC.
 Transcription Services: Automatic transcription of consultations using DeepGram.
@@ -13,6 +15,8 @@ Messaging: In-app chat and information sharing via Apple chat API.
 Medical Text Analysis: Utilizes AWS Medical Comprehend for medical text analysis.
 Speech Recognition: Enhanced speech recognition with Open AI Whisper.
 Medical Data: Access to adverse events repository from open.fda.gov.
+
+
 Getting Started
 Prerequisites
 Node.js
