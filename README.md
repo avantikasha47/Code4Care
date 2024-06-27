@@ -18,31 +18,39 @@ Medical Data: Access to adverse events repository from open.fda.gov.
 
 
 Getting Started
+
 Prerequisites
 Node.js
 npm
 React
 Installation
+
 Clone the repository:
 bash
 Copy code
 git clone https://github.com/avantikasha47/telehealth-app.git
+
 Install dependencies:
 bash
 Copy code
 cd telehealth-app
+
 npm install
+
 Running the App
+
 Start the development server:
 bash
 Copy code
 npm start
+
 Configuration
 Square Up Payment Gateway: Ensure you have your Square developer credentials set up in your environment variables.
 Usage
 Navigate to the homepage.
 Sign up or log in to your account.
 Access payment features securely via Square Up.
+
 Video Presentation
 For a comprehensive overview of the app, watch our video presentation (https://drive.google.com/file/d/1ubTQsZTD9P86d5DXbTlrYreRyqifDE-4/view?usp=drivesdk)
 
