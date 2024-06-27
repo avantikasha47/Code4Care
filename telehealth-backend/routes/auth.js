@@ -4,6 +4,7 @@ const User = require('../models/user');
 const generateToken = require('../utils/generateToken'); // Import generateToken function // Import User model
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+require('dotenv').config();
 // Registration route
 router.post('/register', async (req, res) => {
   const { name, email, password } = req.body;
@@ -37,23 +38,26 @@ router.post('/register', async (req, res) => {
 });
 // Login route
 router.post('/login', async (req, res) => {
-    const { email, password } = req.body;
-    console.log('Received login request:', { email, password });
-    try {
-      // Check if user exists
-      const user = await User.findOne({ email });
-      if (!user) {
-        console.error('Validation error: User not found');
-        return res.status(400).json({ error: 'Invalid credentials' });
-      }
-  
-     // Validate password
-    const validPassword = await user.comparePassword(password);
-    if (!validPassword) {
-      console.error('Validation error: Invalid password');
+  const { email, password } = req.body;
+  console.log('JWT_SECRET:', process.env.JWT_SECRET);
+
+  try {
+    // Check if user exists
+    const user = await User.findOne({ email });
+    if (!user) {
       return res.status(400).json({ error: 'Invalid credentials' });
     }
-    const token = generateToken(user); // Example function to generate token
+
+    // Validate password
+    const validPassword = await bcrypt.compare(password, user.password);
+    if (!validPassword) {
+      return res.status(400).json({ error: 'Invalid credentials' });
+    }
+
+    // Generate JWT token
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
+    
+    // Send token as response
     res.status(200).json({ token });
 
   } catch (error) {

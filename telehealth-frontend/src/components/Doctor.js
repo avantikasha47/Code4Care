@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { FaVideo, FaComments } from 'react-icons/fa';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import doctorsData from '../doctors.json';
-// import './DoctorDashboard.css';
+import './DoctorDashboard.css';
 
 const DoctorDashboard = () => {
     const [doctors, setDoctors] = useState([]);
@@ -44,11 +44,7 @@ const DoctorDashboard = () => {
                     )
                     .map((doctor) => (
                         <div key={doctor._id} className="doctor-card">
-                            <h2 className="doctor-name">
-                                <Link to={`/doctor/${doctor._id}`} className="doctor-link">
-                                    {doctor.name}
-                                </Link>
-                            </h2>
+                            <h2 className="doctor-name">{doctor.name}</h2>
                             <p className="doctor-specialty">Specialty: {doctor.specialty}</p>
                             <p className="doctor-description">{doctor.description}</p>
                             <p className="doctor-price">Price: ${doctor.price}</p>
